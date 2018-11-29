@@ -1,0 +1,4 @@
+.idea/
+models.txt
+train.sh
+cfgs/local_test.yaml
