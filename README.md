@@ -1,5 +1,7 @@
 # FishNet
 
+![ ](head_pic.jpg)
+
 This repo holds the implementation code of the paper:
 
 [FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction](http://papers.nips.cc/paper/7356-fishnet-a-versatile-backbone-for-image-region-and-pixel-level-prediction.pdf)
