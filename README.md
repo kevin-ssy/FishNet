@@ -24,9 +24,9 @@ FishNet was used as a key component
 **Note**: We apply weight decay to all weights and biases instead of just the weights of the convolution layers.
 
 ### Training
-To train the model in 8 GPUs with batch size 256, simply run
+To train FishNet-150 with 8 GPUs and batch size 256, simply run
 ```
-python main.py --config "cfgs/local_test.yaml" IMAGENET_ROOT_PATH
+python main.py --config "cfgs/fishnet150.yaml" IMAGENET_ROOT_PATH
 ```
 
 ### Models
@@ -56,4 +56,3 @@ If you find our research useful, please cite the paper:
 
 ### Contact
 You can contact Shuyang Sun by sending email to shuyang.sun@sydney.edu.au.
-We will release the code and details ASAP.
