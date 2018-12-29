@@ -84,8 +84,8 @@ def calc_flops(model, input_size):
 
 def count_params(model, input_size=224):
     # param_sum = 0
-    # with open('models.txt', 'w') as fm:
-    #     fm.write(str(model))
+    with open('models.txt', 'w') as fm:
+        fm.write(str(model))
     calc_flops(model, input_size)
 
     model_parameters = filter(lambda p: p.requires_grad, model.parameters())

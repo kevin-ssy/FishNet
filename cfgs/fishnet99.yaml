@@ -1,5 +1,5 @@
 common:
-    arch: fishnet150
+    arch: fishnet99
     workers: 1
     batch_size: 32
 
@@ -12,4 +12,4 @@ common:
     weight_decay: 0.0001
 
     print_freq: 10
-    save_path: checkpoints/fishnet150_bs256
+    save_path: checkpoints/fishnet99_bs256
