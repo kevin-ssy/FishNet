@@ -32,14 +32,23 @@ python main.py --config "cfgs/fishnet150.yaml" IMAGENET_ROOT_PATH
 ```
 
 ### Models
+**Models trained without tricks**
 |    Model   | Top-1  | Top-5  | Baidu Yun | Google Cloud |
 | ---------- | ------ | -----  | --------- | ------------ |
-| FishNet99  | 77.41% | 93.59% | [Click](https://pan.baidu.com/s/11U3sRod1VfbDBRbmXph6KA)| [Click](https://www.dropbox.com/s/hvojbdsad5ue7yb/fishnet99_ckpt.tar?dl=0) | 
-| FishNet150 | 78.14% | 93.95% | [Click](https://pan.baidu.com/s/1uOEFsBHIdqpDLrbfCZJGUg)| [Click](https://www.dropbox.com/s/hjadcef18ln3o2v/fishnet150_ckpt.tar?dl=0)
+| FishNet99  | 77.41% | 93.59% | [Download](https://pan.baidu.com/s/11U3sRod1VfbDBRbmXph6KA)| [Download](https://www.dropbox.com/s/hvojbdsad5ue7yb/fishnet99_ckpt.tar?dl=0) |
+| FishNet150 | 78.14% | 93.95% | [Download](https://pan.baidu.com/s/1uOEFsBHIdqpDLrbfCZJGUg)| [Download](https://www.dropbox.com/s/hjadcef18ln3o2v/fishnet150_ckpt.tar?dl=0)
 | FishNet201 | 78.76% | 94.39% | Available Soon | Available Soon |
 
+**Models trained with cosine lr schedule (200 epochs) and label smoothing**
+|    Model   | Top-1  | Top-5  | Baidu Yun | Google Cloud |
+| ---------- | ------ | -----  | --------- | ------------ |
+| FishNet99  | 77.41% | 93.59% | Available Soon | Available Soon |
+| FishNet150 | 78.14% | 93.95% | Available Soon | [Download](https://www.dropbox.com/s/ajy9p6f97y45f1r/fishnet150_ckpt_welltrained.tar?dl=0) |
+| FishNet201 | 78.76% | 94.39% | Available Soon | Available Soon |
+
+
 ### TODO:
-- [ ] Update our arxiv paper.
+- [x] Update our arxiv paper.
 - [x] Release pre-train models.
 - [ ] Train the model with more training tricks.
 
