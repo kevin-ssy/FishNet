@@ -33,6 +33,7 @@ python main.py --config "cfgs/fishnet150.yaml" IMAGENET_ROOT_PATH
 
 ### Models
 **Models trained without tricks**
+
 |    Model   | Top-1  | Top-5  | Baidu Yun | Google Cloud |
 | ---------- | ------ | -----  | --------- | ------------ |
 | FishNet99  | 77.41% | 93.59% | [Download](https://pan.baidu.com/s/11U3sRod1VfbDBRbmXph6KA)| [Download](https://www.dropbox.com/s/hvojbdsad5ue7yb/fishnet99_ckpt.tar?dl=0) |
@@ -40,6 +41,7 @@ python main.py --config "cfgs/fishnet150.yaml" IMAGENET_ROOT_PATH
 | FishNet201 | 78.76% | 94.39% | Available Soon | Available Soon |
 
 **Models trained with cosine lr schedule (200 epochs) and label smoothing**
+
 |    Model   | Top-1  | Top-5  | Baidu Yun | Google Cloud |
 | ---------- | ------ | -----  | --------- | ------------ |
 | FishNet99  | - | - | Available Soon | Available Soon |
