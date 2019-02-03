@@ -123,7 +123,7 @@ class Fish(nn.Module):
                                             has_score=(i==self.num_down), num_trans=num_trans, k=k, dilation=dilation,
                                             no_sampling=no_sampling)
             if i == self.depth - 1:
-                sample_block.extend(self._make_score(cur_planes + trans_planes, has_pool=True))
+                sample_block.extend(self._make_score(cur_planes + trans_planes, out_ch=self.num_cls, has_pool=True))
             elif i == self.num_down:
                 sample_block.append(nn.Sequential(self._make_se_block(cur_planes*2, cur_planes)))
 
