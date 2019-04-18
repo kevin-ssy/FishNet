@@ -64,8 +64,8 @@ model.load_state_dict(checkpoint['state_dict'])
 optimizer.load_state_dict(checkpoint['optimizer'])
 ```
 
-Note that you do **NOT** need to decompress the model using ```tar``` command.
-The model you download from the cloud could be directly loaded.
+Note that you do **NOT** need to decompress the model using the ```tar``` command.
+The model you download from the cloud could be loaded directly.
 
 ### TODO:
 - [x] Update our arxiv paper.
