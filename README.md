@@ -58,11 +58,14 @@ model = fishnet150()
 
 and then you can load the weights from the pre-trained checkpoint by:
 ```
-checkpoint = torch.load(model_path)  #  model_path: your checkpoint path.
+checkpoint = torch.load(model_path)  #  model_path: your checkpoint path, e.g. checkpoints/fishnet150.tar
 best_prec1 = checkpoint['best_prec1']
 model.load_state_dict(checkpoint['state_dict'])
 optimizer.load_state_dict(checkpoint['optimizer'])
 ```
+
+Note that you do **NOT** need to decompress the model using ```tar``` command.
+The model you download from the cloud could be directly loaded.
 
 ### TODO:
 - [x] Update our arxiv paper.
