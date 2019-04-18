@@ -68,7 +68,7 @@ def calc_flops(model, input_size):
     multiply_adds = False
     list_conv, list_bn, list_relu, list_linear, list_pooling = [], [], [], [], []
     foo(model)
-    if '0.4.' in torch.__version__:
+    if '0.4.' in torch.__version__ or '1.0' in torch.__version__:
         if USE_GPU:
             input = torch.cuda.FloatTensor(torch.rand(2, 3, input_size, input_size).cuda())
         else:

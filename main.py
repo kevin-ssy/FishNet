@@ -89,7 +89,7 @@ def main():
         model = models.__dict__[args.arch]()
 
     if USE_GPU:
-        model.cuda()
+        model = model.cuda()
         model = torch.nn.DataParallel(model)
 
     count_params(model)
@@ -105,12 +105,9 @@ def main():
         if os.path.isfile(args.resume):
             print("=> loading checkpoint '{}'".format(args.resume))
             checkpoint = torch.load(args.resume)
-            args.start_epoch = checkpoint['epoch']
             best_prec1 = checkpoint['best_prec1']
             model.load_state_dict(checkpoint['state_dict'])
             optimizer.load_state_dict(checkpoint['optimizer'])
-            print("=> loaded checkpoint '{}' (epoch {})"
-                  .format(args.resume, checkpoint['epoch']))
         else:
             print("=> no checkpoint found at '{}'".format(args.resume))
 
