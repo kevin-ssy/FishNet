@@ -86,4 +86,4 @@ If you find our research useful, please cite the paper:
 ```
 
 ### Contact
-You can contact Shuyang Sun by sending email to shuyang.sun@sydney.edu.au.
+You can contact Shuyang Sun by sending email to kevin.sysun@gmail.com
